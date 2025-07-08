@@ -1,6 +1,29 @@
-# casual-markdown-cv
+# Casual Markdown CV
 
 [casual-markdown-cv](https://github.com/casualwriter/casual-markdown-cv) is a minimal way to create markdown resume and available online (github-page or other static web hosting)
+
+## PDF Generation
+
+To generate a PDF version of your resume without any margins or headers/footers:
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Generate PDF:
+```bash
+node generate-pdf.js
+```
+
+This will create `resume-dark-puppeteer.pdf` with clean formatting and no white borders.
+
+## Alternative PDF Generation
+
+You can also use Chrome directly:
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu --print-to-pdf="resume.pdf" --print-to-pdf-no-header --print-to-pdf-margin-top=0 --print-to-pdf-margin-bottom=0 --print-to-pdf-margin-left=0 --print-to-pdf-margin-right=0 "file://$(pwd)/resume-dark.html"
+```
 
 It is quite annoying to maintain resume in multiple format, MS Word, PDF, TXT as well as wanna to have an HTML format available online. 
 

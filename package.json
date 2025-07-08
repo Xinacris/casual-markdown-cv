@@ -1,0 +1,16 @@
+{
+  "name": "casual-markdown-cv",
+  "description": "[casual-markdown-cv](https://github.com/casualwriter/casual-markdown-cv) is a minimal way to create markdown resume and available online (github-page or other static web hosting)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pdf": "node generate-pdf.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["resume", "cv", "markdown", "pdf"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  }
+}
